@@ -1,0 +1,1217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+    background-attachment: rgb(198, 198, 198);
+}
+
+
+.Links li{
+    list-style: none;
+
+}
+
+.Links  a{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-size: 1.3rem;
+}
+
+.Links  a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.InfoFront{
+    position: relative;
+    align-items: center;
+    text-align: center;  
+}
+
+.Image{
+    position: relative;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.Image img{
+   width: 500px;
+   height: 550px;
+   border-radius: 30px;
+   
+}
+
+.InfoFront .Text{
+   
+    position: relative;
+    left: 540px;
+    top: -300px;
+   border: 1px solid grey;
+    width: 600px;
+    border-radius: 30px;
+    color: grey;
+}
+
+.navba{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.navba .logo a{
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: grey;
+}
+
+
+
+.navba .Links{
+    display: flex;
+    gap: 2em;
+    
+}
+
+ .action_btn{
+    background-color: rgba(130, 130, 130, 0.661);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    
+
+}
+
+.navba .Tongle_btn{
+   color: rgb(133, 133, 133);
+   cursor: pointer;
+   font-size: 1.5rem;
+   display:none;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.38);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height .2s cubic-bezier(0.175,0.885,0.32,1.275);
+    z-index: 1;
+}
+
+.dropdown_menu li:hover{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-underline-offset: 4rem;
+    background: rgba(128, 128, 128, 0.437);
+}
+
+.dropdown_menu li a:hover{
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown_menu.open{
+    height: 280px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(180, 180, 180);
+}
+
+.dropdown_menu li a{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-size: 1.0rem;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+@media (max-width:992px) {
+
+    .navba .Links,
+    .navba .action_btn{
+        display: none;
+    }
+    .navba .Tongle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+
+    }
+
+}
+
+@media (max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        z-index: 1;
+        
+    }
+
+}
+
+@media(max-width:1182px){
+    .Image{
+        position: relative;
+        text-align: left;
+        align-items: flex-end;
+    }
+    
+    
+    .Image img{
+       width: 400px;
+       height: 550px;
+       border-radius: 30px;
+       
+    }
+    
+    .InfoFront .Text{
+        position: relative;
+        left: 530px;
+        top: -300px;
+        width: 500px;
+        border-radius: 30px;
+    }
+
+
+}
+@media(max-width:1087px){
+    .InfoFront .Text{
+        position: relative;
+        left: 430px;
+        top: -300px;
+        width: 500px;
+        border-radius: 30px;
+    }
+    .Image img{
+        width: 420px;
+        height: 550px;
+        border-radius: 30px;
+        
+     }
+}
+
+@media(max-width:969px){
+    .InfoFront .Text{
+        position: relative;
+        display:block ;
+        left: 100px;
+        top: -160px;
+        width: 500px;
+        border-radius: 30px;
+        box-shadow:5px 5px 20px rgba(176, 176, 176, 0.289);
+    }
+    
+}
+
+@media(max-width:647px){
+    .InfoFront .Text{
+        position: relative;
+        display:block ;
+        left: 0;
+        top: -160px;
+        width: 400px;
+        border-radius: 30px;
+        color: white;
+        box-shadow:5px 5px 20px rgba(176, 176, 176, 0.289);
+    }
+
+}
+
+
+/* CSS ----------------- Menu---------------------*/
+@media screen and (max-width:1414px){
+
+    .Experiencia{
+        position: relative;
+        top: 260px;
+        align-items: center;
+        text-align: center;
+        max-width: 1200px;
+       
+
+    }
+  
+}
+
+.Experiencia{
+    position: relative;
+    max-width: 100%;
+}
+
+.Experiencia .GroupCard{
+    position: relative;
+}
+
+
+/*``````````````````````````````````````````````````````````````*/
+.Experiencia .GroupCard .container{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    box-shadow:5px 5px 20px rgba(176, 176, 176, 0.289);
+   
+}
+
+.Experiencia .GroupCard .container .container_left p{
+    color: rgb(103, 103, 103);
+}
+
+.Experiencia .GroupCard .container .container_left h1{
+    color: rgb(103, 103, 103);
+    font-size: 20px;
+    
+}
+  
+
+@media (width < 1200px){
+    .Experiencia .GroupCard  .container{
+        gap: 3rem;
+    }
+
+}
+@media (width < 900px){
+
+    .Experiencia .GroupCard .container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .Experiencia .GroupCard  .container_right{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+}
+@media (width < 750px){
+
+    .Experiencia .GroupCard  .container_right{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+
+
+@media screen and(max-width:700px) {
+
+
+}
+
+.Projeto{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 600px;
+    align-items: center;
+    text-align: center;
+}
+
+.Projeto h3{
+    color: rgb(123, 123, 123);
+    font-size: 24px;
+        
+}
+
+.Projeto .Blocos{
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.Blocos::-webkit-scrollbar{
+    width: 0;
+}
+
+.Projeto .Blocos .item{
+    width: 100%;
+    height:  180px;
+    line-height: 140px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.276);
+    margin-right: 2px;
+
+}
+
+.Projeto .Blocos .item:hover{
+    scale: 1.02;
+    cursor: pointer;
+    transition: 0.4s;
+    border-bottom: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.Sobre{
+    position: relative;
+    top: 1000px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 5px 20px rgba(176, 176, 176, 0.289);
+    
+}
+
+.Sobre .Content img{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10x;
+    color: rgb(156, 156, 156);
+}
+
+.text h1{
+   color: rgb(174, 174, 174);
+   font-size: 30px;
+   margin-bottom: 20px;
+   text-transform: capitalize;
+}
+
+.text h5{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.Content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text p{
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+button{
+    background-color: #ffffff96;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    width: 120px;
+    height: 50px;
+    color: rgb(150, 150, 150);
+    text-decoration: none;    
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid   #a7a7a7;
+    color: rgb(116, 116, 116);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.Contacto{
+    position: relative;
+    top: 700px;
+}
+
+.Contacto h1{
+    position: relative;
+    color: rgb(96, 96, 96);
+    font-size: 24px;    
+}
+
+
+.Contact{
+    top: 10px;
+    width: 100%;
+    position: relative;
+    height: 550px;
+}
+.Container{
+    position: relative;
+    width: 100%;
+    padding: 30px 60px 40px 40px;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.757);
+
+}
+
+.Container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Container .content .left-side{
+    width: 10%;
+    height: 100%;
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    background-color: rgb(109, 109, 109);
+    right: -15px;
+    transform: translateY(-10%);
+
+}
+
+.Container .content .left-side .detalhes{
+   text-align: center;
+}
+
+.content .left-side .detalhes .text-one,
+.content .left-side .detalhes .text-two
+{
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+
+}
+
+.Container .content .left-side .detalhes svg{
+    font-size: 30px;
+    color: rgb(169, 169, 169);
+    margin-bottom: 10px;
+ }
+  
+ .Container .content .left-side .detalhes{
+    font-size: 18px;
+    font-weight: 500;
+
+ }
+
+.Container .content .right-side{
+    width: 100%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(101, 101, 101);
+    border-bottom: 1px solid rgb(127, 127, 127);
+}
+
+.right-side  .Input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side  .Input-box input,
+.right-side  .Input-box textarea
+{
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none;
+    background-color: rgba(179, 179, 179, 0.56);
+}
+.right-side .mensage-box{
+    max-width: 370px;
+    margin-top: 6px;
+    height: 120px;
+}
+.right-side .Button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.right-side .Button input{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    background-color: rgb(153, 153, 153);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.Button input:hover{
+    background-color: rgb(162, 162, 162);
+}
+
+@media (max-width : 736px){
+
+
+    .Container{
+        width: 100%;
+        padding: 30px 35px 40px 35px;
+        position: relative;
+    }
+    .Container .content .left-side .detalhes{
+        margin-left: 20px;
+     }
+    
+}
+
+@media (max-width :560px){
+
+    .Container{
+       margin: 40px 0;
+       height: 100%;
+    }
+    .Contacto{
+        position: relative;
+        top: 800px;
+    }
+
+    .Container .content{
+        flex-direction: column-reverse;
+    }
+    
+    .Container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .Container .content .left-side::before{
+        display: none;
+
+    }
+
+    .Container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+
+    }
+}
+
+@media screen and (max-width:1123px){
+    .Sobre{
+        position: relative;
+        top: 1400px;
+        margin: 0;
+        padding: 70x 0px;
+        width: 70%;
+        height: auto;
+        
+    }
+    .Sobre .Content img{
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+
+.sobre{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 880px;
+   
+}
+
+.sobre .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10rem;
+}
+.sobre .container_left h1{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight:500;
+    color:grey;
+}
+
+.sobre .container_left p{
+    color:var(--text-dark);
+    margin-bottom:1rem;
+
+
+}
+
+.sobre .container_left img
+{
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.sobre .container_right{
+    display:grid;
+    gap:2rem;
+
+}
+
+.sobre .card{
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    gap:2rem;
+    background-color:var(--white);
+    border-radius:1rem;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.2);
+    cursor:pointer;
+    border-bottom: 1px solid grey;
+}
+
+
+.sobre .card_content{
+    display:flex;
+    gap:1rem;
+}
+
+.sobre .card_content span svg{
+    font-size:2rem;
+    color:var(--primary-color);
+}
+
+.sobre .card_details p{
+    font-style:italic;
+    color:grey;
+    margin-bottom:1rem;
+    border-bottom: 1px solid rgb(187, 187, 187);
+
+}
+
+.sobre .card_details h4{
+    text-align:right;
+    color:grey;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+
+@media (width < 1200px){
+    .sobre .container{
+        gap: 3rem;
+    }
+
+}
+@media (width < 900px){
+
+    .sobre .container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .sobre .container_right{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+}
+@media (width < 750px){
+
+    .sobre .container_right{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+.CardPogresso{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 10px;
+    top: 1060px;
+    text-align: center;
+    
+}
+ 
+.CardPogresso .group{
+    display:flex;
+    align-items: center;
+    width: 100%;    
+}
+.CardPogresso h1{
+   color: grey;
+   font-size: 30px;
+   font-weight: 500;
+   font-family: sans-serif;
+}
+
+.CardPogresso .Box{
+    position: relative;
+     display:flex;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 100px;
+    border-bottom: 1px solid #7adeff;
+    border-top: 1px solid #7adeff;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: red;
+   
+}
+
+.CardPogresso .Box:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CardPogresso .Box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .Box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .Box .percent svg circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset:440;
+    stroke-linecap:round ;
+    
+}
+
+.CardPogresso .Box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+
+
+.CardPogresso .Box .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 + 50000) /100);
+    stroke: #7adeff;
+}
+
+.CardPogresso .Box .percent .numero{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.CardPogresso .Box .percent .numero h2{
+    font-size: 38px;
+}
+
+.CardPogresso .Box .percent .numero h2 span{
+    font-size: 24px;
+}
+
+.CardPogresso .Box .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+
+
+
+@media screen (max-width:1075px){
+
+    .CardPogresso .Box{
+        position: relative;
+         display:flex;
+        width: 300px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-left: 50px;
+        border-bottom: 1px solid #7adeff;
+        border-top: 1px solid #7adeff;
+        border-radius: 30px;
+        margin-top: 20px;
+        background-color: red;
+       
+    }
+    .CardPogresso .BoxPH{
+        position: relative;
+       display: flex;
+        width: 300px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-left: -10px;
+        border-bottom: 1px solid #8a0ecd;
+        margin-top: 20px;
+    }
+
+    .CardPogresso .BoxJS{
+        position: relative;
+        display: flex;
+        width: 300px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-left: 50px;
+        border-bottom: 1px solid #ffed7a;
+        border-top: 1px solid #ffed7a;
+        border-radius: 30px;
+        margin-top: 20px;
+        background-color: yellow;
+    }
+ 
+    
+}
+
+/*Card Javascript*/
+.CardPogresso .BoxJS{
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 100px;
+    border-bottom: 1px solid #ffed7a;
+    border-top: 1px solid #ffed7a;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: yellow;
+}
+
+.CardPogresso .BoxJS:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CardPogresso .BoxJS .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .BoxJS .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .BoxJS .percent svg circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset:440;
+    stroke-linecap:round ;
+    
+}
+
+.CardPogresso .BoxJS .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+
+
+.CardPogresso .BoxJS .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 + 9000) /40);
+    stroke: #ffed7a;
+}
+
+.CardPogresso .BoxJS .percent .numero{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.CardPogresso .BoxJS .percent .numero h2{
+    font-size: 38px;
+}
+
+.CardPogresso .BoxJS .percent .numero h2 span{
+    font-size: 24px;
+}
+
+.CardPogresso .BoxJS .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+/*Card PhP*/
+
+.CardPogresso .BoxPH{
+    position: relative;
+   display: flex;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 100px;
+    border-bottom: 1px solid #8a0ecd;
+    border-top: 1px solid #8a0ecd;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.CardPogresso .BoxPH:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.523);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CardPogresso .BoxPH .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .BoxPH .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.CardPogresso .BoxPH .percent svg circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset:440;
+    stroke-linecap:round ;
+    
+}
+
+.CardPogresso .BoxPH .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+
+
+.CardPogresso .BoxPH .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 + 13000) /40);
+    stroke: #8a0ecd;
+}
+
+.CardPogresso .BoxPH .percent .numero{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.CardPogresso .BoxPH .percent .numero h2{
+    font-size: 38px;
+}
+
+.CardPogresso .BoxPH .percent .numero h2 span{
+    font-size: 24px;
+}
+
+.CardPogresso .BoxPH .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+
+.Footer{
+    position: relative;
+    top: 1700px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 100%;
+    height: 150px;
+
+}
+
+.Footer .ConteudoLeft{
+    position: relative;
+    float: left;
+    top: 30px; 
+    display: flex;
+    color: rgba(85, 85, 85, 0.513);
+    left: 40px;
+}
+
+.Footer .ConteudoLeft span{
+    position: relative;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+
+
+}
+footer #Pro:hover{
+    transition: 0.6s;
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(185, 185, 185, 0.646);
+}
+footer #Contac:hover{
+    transition: 0.6s;
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(185, 185, 185, 0.646);
+}
+
+footer #Company:hover{
+    transition: 0.6s;
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(185, 185, 185, 0.646);
+}
+
+footer ul{
+    position: relative;
+  top: 30px;
+}
+
+footer ul li{
+ position: relative;
+
+
+}
+
+footer ul li a{
+ text-decoration: none;
+ color: white;
+ display: inline-block;
+ margin-left: 40px;
+}
+
+footer ul li a:hover{
+   transition: 0.7;
+   color: rgb(178, 178, 71);
+}
+   
