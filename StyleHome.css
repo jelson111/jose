@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+.Main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #161a1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5000%;
+    transition: 1.40s;
+}
+body{
+    height: 80vh;
+    background-image: url(./Img/im5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+header{
+    padding: 0 2rem;
+}
+
+
+
+.navba{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navba .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+
+.navba .Links{
+    display: flex;
+    gap: 2em;
+}
+
+ .action_btn{
+    background-color: rgba(165, 165, 165, 0.383);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.navba .Tongle_btn{
+   color: white;
+   display: none;
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height .2s cubic-bezier(0.175,0.885,0.32,1.275);
+    
+
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width:992px) {
+
+    .navba .Links,
+    .navba .action_btn{
+        display: none;
+    }
+    .navba .Tongle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+
+    }
+
+}
+
+@media (max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        
+    }
+
+}
+
+
+.Content_1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 900px;
+}
+
+.Content_1>.Discricao{
+    width: 900px;
+    height: 30px;
+}
+
+.Content_1 h2{
+    position: relative;
+    color: grey;
+    top: -10px;
+}
+
+.Content_2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 1200px;
+}
+
+.Content_2>.Card{
+    width: 250px;
+    height: 150px;
+    background: rgba(162, 162, 162, 0.798);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 8px;
+    cursor: pointer;
+
+} 
+
+.Content_2>.Card span{
+  color: white;
+  
+}
+
+.Content_3{
+    position: relative;
+    display: flex;
+    top: 1300px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Content_3>.CardCa{
+position: relative;
+margin-left: 10px;
+    
+}
+
+
+/*
+.Content_3>.CardCa:nth-child(1){
+    border-bottom: 10px solid tomato;      
+ }
+ */
+
+
+.Content_3>.CardCa img{
+    width: 460px;
+    height: 300px;
+
+}
+.Content_4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 1480px;
+    
+}
+.Content_4>.Conteudo_Expli{
+    position: relative;
+    width: 100%;
+}
+
+.Content_4>.Conteudo_Expli>.Discri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content_4>.Conteudo_Expli>.Discri span{
+   position: relative;
+   top: 280px;
+   z-index: 1;
+   color: white;
+   font-size: 40px;
+   font-weight: 700;
+}
+
+.Content_4>.Conteudo_Expli img{
+    width: 100%;
+    height: 600px;
+    opacity: 2;
+}
+
+.classecar{
+    position: relative;
+    top: 1800px;
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin:  0 auto;
+}
+
+@media(max-width:686px){
+    .Content_1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 570px;
+        margin-left: 5px;
+    }
+
+}
+
+@media(max-width:986px){
+    .Content_1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 700px;
+    }
+
+    .Content_2{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 960px;
+    }
+
+}
+
+@media(max-width:903px){
+    .Content_1{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 670px;
+        margin-left: 10px;
+    }
+
+}
+
+@media(max-width:531px){
+    .Content_2{
+        display: block;
+        position: relative;
+        justify-content: center;
+        top: 1100px;
+    }
+    .Content_2>.Card{
+        width: 100%;
+        height: 200px;
+        background: rgba(162, 162, 162, 0.798);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 8px;
+    
+    } 
+
+}
+
+@media(max-width:1263px){
+    
+.Content_3>.CardCa img{
+    width: 380px;
+    height: 290px;
+
+}
+
+}
+
+@media(max-width:1015px){
+    .Content_3{
+        position: relative;
+        display: flex;
+        top: 1300px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+}
+
+@media(max-width:1047px){
+    .Content_3{
+        display: flex;
+        position: relative;
+        top:1400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .Content_3>.CardCa img{
+        width: 380px;
+        height: 290px;
+        margin-bottom: 5px;
+    
+    }
+
+ /*
+ .Content_3>.CardCa{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+    }
+ */   
+
+}
+
+@media(max-width:983px){
+    .Content_3{
+        display: flex;
+        position: relative;
+        top:1100px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+@media(max-width:922px){
+    .Content_3>.CardCa img{
+        width: 300px;
+        height: 290px;
+        margin-bottom: 5px;
+    
+    }
+}
+
+@media(max-width:636px){
+    .Content_3{
+        display: block;
+        position: relative;
+        top:1200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Content_3>.CardCa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+     }
+
+     .Content_3>.CardCa img{
+        width: 480px;
+        height: 300px;
+        margin-bottom: 5px;
+    
+    }
+
+}
+

@@ -1,0 +1,110 @@
+volante:O volante é a interface entre o condutor e a direção de um automóvel ou outro veículo. Consiste tipicamente num aro circular, a ser manipulado pelo condutor, cujo movimento de rotação (esterço) é convertido em movimentos solidários com as rodas.
+
+Pneu:Funções básicas de um pneu
+Alterar e manter a direção do veículo, absorver impactos, transferir forças de tração e frenagem e suportar cargas são as principais funções de um pneu, e o mais importante é entender que elas acontecem simultaneamente.
+
+motor:O motor de carro é responsável por transformar a energia gerada pela combustão em movimento. Entender o funcionamento e as partes do motor é fundamental para garantir sua durabilidade e bom desempenho.
+
+farois:Os faróis são itens obrigatórios para qualquer tipo de veículo e fundamentais para a segurança no trânsito. Além de permitirem a visualização em situações de pouca ou nenhuma luz natural, os faróis também são responsáveis pela visualização dos próprios veículos que transitam nas vias e estradas.
+
+
+
+
+Além de escolher bem a marca e o modelo, muitas pessoas gostam de incrementar o automóvel com acessórios. Muito mais do que apenas estética, os equipamentos automotivos servem para melhorar o conforto, a segurança, a performance e aumentar o valor de revenda dos carros pela tabela FIPE.
+
+Sejam equipamentos para o interior ou exterior do veículo, é sempre importante investir em acessórios de qualidade. No mercado, podemos encontrar milhares de opções para incluir no possante. Câmera de ré, rodas, pneus, central multimídia, volantes esportivos, piloto automático..
+
+
+
+
+Menunteçao:É um procedimento realizado periodicamente para manter o carro em pleno funcionamento e evitar acidentes decorrentes de falhas nos componentes do veículo. Existe uma diferença entre a manutenção preventiva e a corretiva, que são as mais comuns quando se trata de revisão do carro em oficinas especializadas.
+
+
+
+
+Quais são os benefícios de carro?
+Siga a leitura!
+Conforto no dia a dia. ...
+Realização de um sonho antigo. ...
+Mais segurança nas ruas. ...
+Liberdade para ir e vir quando quiser. ...
+Proteção contra emergências. ...
+Economia de tempo. ...
+Prazer de dirigir.
+
+
+
+Podemos classificar os carros de diversas maneiras. Podemos separá-los pela estrutura, pela finalidade, pela quantidade de portas, pelo tipo e potência do motor ou pelo tipo de combustível com que operam.
+
+
+
+Quais são os tipos de automóveis?
+Tipos de carros modernos
+Hatchs;
+Sedans;
+SUVs;
+Picapes;
+Utilitários.
+
+
+
+Automóvel ou carro é um veículo motorizado com rodas usado para transporte. A maioria das definições de carro diz que eles correm basicamente em estradas, acomodam de uma a oito pessoas, têm quatro pneus e, principalmente, transportam pessoas em vez de mercadorias.
+
+
+
+:Hatch: o nome possui origem inglesa é vem de outra palavra, chamada Hatchback. Os veículos com esta nomenclatura apresentam uma porta ao invés de uma tampa no bagageiro. Além disso, são carros compactos e com design mais simples, o que pode ser atrativo para o público mais popular.
+
+:Sedan ou sedã é o famoso carro três-volumes. Nele, a carroceria é dividida claramente entre cofre do motor, habitáculo e porta-malas avantajado. Essa categoria geralmente oferece quatro portas, um bom espaço interno e porta-malas acima de 400 litros de capacidade.
+
+
+:O que significa SUV? A sigla SUV significa Sport Utility Vehicle, em livre tradução: veículo utilitário esportivo. Os carros dessa categoria costumam ser reconhecidos por apresentarem porte robusto, interior espaçoso e por transitar com excelente desempenho na cidade ou no off-road.
+
+
+:Qual a classificação da caminhonete?
+No que se refere à classificação por espécie, a camioneta é considerada veículo MISTO e a caminhonete é veículo DE CARGA.
+
+
+:O que é carro utilitário? Podemos definir um carro utilitário como o modelo que tem capacidade de transportar pessoas e cargas ao mesmo tempo. Em suas várias versões, podem se apresentar com carroceria aberta, carroceria fechada, furgão e até SUV, exercendo bem a sua função tanto para trabalho quanto para passeio.
+
+
+            <div class="cards_cars">
+                
+                <div class="card_type">
+                    <span>Hatchs</span>
+                </div>
+
+                <div class="card_type">
+                    <span>Hatchs</span>
+                </div>
+
+                <div class="card_type">
+                    <span>Hatchs</span>
+                </div>
+
+                <div class="card_type">
+                    <span>Hatchs</span>
+                </div>
+
+                <div class="card_type">
+                    <span>Hatchs</span>
+                </div>
+
+            </div>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 5px 20px rgb(0, 0, 0);
+    left: -10px;
+    margin-left: 10px;
+    top: 200px;
+
+
+

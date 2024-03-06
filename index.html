@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleHome.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Vendas de Carro</title>
+</head>
+<body>
+    <header>
+        <div class="navba">
+            <div class="logo"><a href="#">Dayl-Car</a></div>
+            <ul class="Links">
+                <li class="heri"><a href="#">Home</a></li>
+                <li class="heri"><a href="#secone">Sobre</a></li>
+                <li class="heri"><a href="#Tipo">Tipo</a></li>
+                <li class="heri"><a href="#Bene">Benefícios</a></li>
+                <li class="heri"><a href="#Acess">Acessórios</a></li>
+
+
+            </ul>
+            <a href="" class="action_btn">Venha</a>
+            <div class="Tongle_btn">
+                <svg id="BtnMenu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+
+            </div>
+
+        </div>
+
+        <div class="dropdown_menu">
+            <li class="heri"><a href="#">Home</a></li>
+                <li class="heri"><a href="#secone">Sobre</a></li>
+                <li class="heri"><a href="#Tipo">Tipo</a></li>
+                <li class="heri"><a href="#Bene">Benefícios</a></li>
+                <li class="heri"><a href="#Acess">Acessórios</a></li>
+
+
+        </div>
+
+
+    </header>
+
+
+    <section class="Content_1">
+
+        <div class="Discricao">
+            <h2>Automóvel</h2>
+            <p>
+                Um seguro de acidentes de trabalho mais do que um direito dos trabalhadores é uma defesa para o empregador de facto a seguradora ao garantir a proteção do trabalhador e da sua família no caso de ocorrer uma fatalidade também garante que essa responsabilidade não vai por em perigo a atividade da empresa 
+            </p>
+
+            <p>
+                Um seguro de acidentes de trabalho mais do que um direito dos trabalhadores é uma defesa para o empregador de facto a seguradora ao garantir a proteção do trabalhador e da sua família no caso de ocorrer uma fatalidade também garante que essa responsabilidade não vai por em perigo a atividade da empresa 
+            </p>
+
+            <p>Um seguro de acidentes de trabalho mais do que um direito dos trabalhadores é uma defesa para o empregador de facto a seguradora ao garantir a proteção do trabalhador e da sua família no caso de ocorrer uma fatalidade também garante que essa responsabilidade não vai por em perigo a atividade da empresa </p>
+
+        </div>
+
+    </section>
+
+    <section class="Content_2">
+        <div class="Card">
+            <Span>Distaques</Span>
+        </div>
+
+        <div class="Card">
+            <Span>Sobre</Span>
+        </div>
+
+        <div class="Card">
+            <Span>Carros</Span>
+        </div>
+        
+
+    </section>
+
+    <section class="Content_3">
+        
+
+        <div class="CardCa">
+            <img src="Img/carSuv.jpg" alt="">
+
+        </div>
+
+        <div class="CardCa">
+            <img src="Img/carSuv2.jpg" alt="">
+
+        </div>
+
+    </section>
+
+
+    <section class="Content_4">
+        <div class="Conteudo_Expli">
+            <div class="Discri">
+                <span>Quais são os tipos de automóveis?</span>
+            </div>
+
+            <img src="Img/suv.jpeg" alt="">
+        </div>
+
+        
+    </section>
+
+
+    <section class="classecar">
+        <div class="video">
+            <img src="Img/carPicap.jpg">
+               <h2>Como Criar sites</h2>
+            </div>
+
+    </section>
+
+
+
+    <script>
+        const togglebtn = document.querySelector('.Tongle_btn')
+        const toggleBtnIcon = document.querySelector('.Tongle_btn svg')
+        const DropDown = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function(){
+            DropDown.classList.toggle('open')
+        }
+    </script>
+
+<script src="ScriptAnimacaoCar.js"></script>
+</body>
+</html>
